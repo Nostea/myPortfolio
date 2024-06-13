@@ -4,7 +4,11 @@ const WorkSection = () => {
   return (
     <section className="mt-8 pb-16">
       <div className="flex flex-row gap-14">
-        <img src="./depthPlaceholder.jpg" alt="" className="w-1/2 rounded-xl" />
+        <img
+          src="./depthPlaceholder.jpg"
+          alt=""
+          className="w-1/2 rounded-xl object-cover"
+        />
         <div className="w-full pr-12">
           <div className="flew-row mt-16 flex justify-between">
             <h2 className="text-4xl font-extrabold uppercase">Work</h2>

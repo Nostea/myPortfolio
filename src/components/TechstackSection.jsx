@@ -6,7 +6,7 @@ const TechstackSection = () => {
       <h2 className="pb-8 font-clashDisplay text-3xl font-bold uppercase">
         Techstack
       </h2>
-      <div className="flex flex-row flex-wrap gap-2">
+      <div className="flex flex-row flex-wrap gap-2 px-16">
         <SkillsPill skill="HTML/CSS" />
         <SkillsPill skill="JavaScript" />
         <SkillsPill skill="TypeScript" />
