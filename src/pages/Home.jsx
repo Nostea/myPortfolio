@@ -4,15 +4,16 @@ import HeaderGreetingSection from "../components/HeaderGreetingSection.jsx";
 import Navbar from "../components/Navbar.jsx";
 import TechstackSection from "../components/TechstackSection.jsx";
 import WorkSection from "../components/WorkSection.jsx";
+import ContactSectionSplit from "../components/ContactSectionSplit";
 
 const Home = () => {
   return (
     <div>
       <HeaderGreetingSection />
+      <AboutMeSection />
       <WorkSection />
       <TechstackSection />
-      <AboutMeSection />
-      <ContactSection />
+      <ContactSectionSplit />
     </div>
   );
 };

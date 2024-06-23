@@ -2,11 +2,11 @@ import SkillsPill from "./SkillsPill";
 
 const TechstackSection = () => {
   return (
-    <section className="flex flex-col items-center bg-gridBG bg-cover bg-repeat-x pb-32">
+    <section className="bg-repeat-x-y max-desktop:px-[10vw] max-mobile:w-full mb-32 flex flex-col items-center bg-gridBG">
       <h2 className="pb-8 font-clashDisplay text-3xl font-bold uppercase">
         &#60; Techstack &#47;&gt;
       </h2>
-      <div className="flex flex-row flex-wrap gap-2 px-16">
+      <div className="max-mobile:px-0 max-mobile:mb-6 flex flex-row flex-wrap gap-2 px-16">
         <SkillsPill skill="HTML/CSS" />
         <SkillsPill skill="JavaScript" />
         <SkillsPill skill="TypeScript" />
