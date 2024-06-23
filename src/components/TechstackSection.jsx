@@ -2,9 +2,9 @@ import SkillsPill from "./SkillsPill";
 
 const TechstackSection = () => {
   return (
-    <section className="flex flex-col items-center pb-12">
+    <section className="flex flex-col items-center bg-gridBG bg-cover bg-repeat-x pb-32">
       <h2 className="pb-8 font-clashDisplay text-3xl font-bold uppercase">
-        Techstack
+        &#60; Techstack &#47;&gt;
       </h2>
       <div className="flex flex-row flex-wrap gap-2 px-16">
         <SkillsPill skill="HTML/CSS" />

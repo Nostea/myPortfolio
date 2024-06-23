@@ -13,6 +13,9 @@ export default {
       backgroundImage: {
         headerBg: "url('./blobGridBG.svg')",
         bannerBG: "url('./Holo.jpg')",
+        techstackBG: "url('./TechstackBlobBG.svg')",
+        gridBG: "url('./gridBG.svg')",
+        depthPlaceHolder: "url('./depthPlaceholder.jpg')",
       },
     },
   },

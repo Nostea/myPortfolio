@@ -4,7 +4,7 @@ const HeaderGreetingSection = () => {
   return (
     <>
       <div className="bgBlurBottom flex flex-col items-center bg-headerBg bg-cover bg-no-repeat pb-32 pt-2">
-        <div className="mb-56">
+        <div className="mb-56 w-full">
           <Navbar />
         </div>
 
@@ -13,7 +13,7 @@ const HeaderGreetingSection = () => {
             Hey, I'm
           </span>
           <span className="font-clashDisplay text-7xl font-extrabold uppercase">
-            Anna Gofman Frontend Webdev
+            Anna Gofman Frontend Webdeveloper
           </span>
           <p className="w-fit pl-12 pt-4 font-clashDisplay text-xl font-semibold hover:text-violet-500">
             <Link to={"/"}>my resume </Link>

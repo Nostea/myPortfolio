@@ -1,8 +1,8 @@
 const AboutMeSection = () => {
   return (
-    <section className="flex flex-row items-center gap-8 px-16 pb-16">
+    <section className="flex flex-row items-center gap-8 px-16 pb-44">
       <div className="flex flex-col pl-36">
-        <h2 className="font-clashDisplay pb-4 text-6xl font-bold uppercase">
+        <h2 className="pb-4 font-clashDisplay text-6xl font-bold uppercase">
           Nice to meet you
         </h2>
         <p>
