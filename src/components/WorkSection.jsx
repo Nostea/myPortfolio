@@ -7,7 +7,7 @@ const WorkSection = () => {
 
   return (
     <section
-      className="max-mobile:h-fit max-desktop:mx-[10vw] mt-8 h-[60vh] pb-[10vh]"
+      className="max-mobile:h-fit mt-8 h-[60vh] pb-[10vh]"
       onMouseLeave={(e) => setPreviewImg("bg-depthPlaceHolder")}
     >
       <div className="max-mobile:flex-col max-mobile:gap-2 flex h-full flex-row gap-14">
@@ -23,29 +23,38 @@ const WorkSection = () => {
               Projects
             </h2>
             <p className="max-mobile:text-xl max-mobile:px-4 font-clashDisplay text-2xl">
-              9
+              3
             </p>
           </div>
 
           <div className="w-full border-b-2 border-black py-2 pb-2"></div>
 
-          <div className="pb-36">
+          <div className="pb-36 hover:cursor-pointer">
             <WorkListItem
               project={"Free2Game"}
               previewImgClass={"bg-free2gamePreview"}
-              linkTarget={"https://www.github.com"}
+              linkTarget={"https://github.com/Nostea/Free2GameV3"}
               setLinkTarget={setLinkTarget}
               setPreviewImg={setPreviewImg}
-              techStack={["Typescript", "React.js"]}
+              techStack={["Rest API", "JavaScript", "React.js"]}
             />
 
             <WorkListItem
               project={"weather.io"}
               previewImgClass={"bg-weatherIO"}
-              linkTarget={"https://www.github.com"}
+              linkTarget={"https://github.com/Nostea/weatherApp"}
               setLinkTarget={setLinkTarget}
               setPreviewImg={setPreviewImg}
-              techStack={["Typescript", "React.js"]}
+              techStack={["Rest Api", "JavaScript", "React.js"]}
+            />
+
+            <WorkListItem
+              project={"My Portfolio"}
+              previewImgClass={"bg-depthPlaceHolder"}
+              linkTarget={"https://github.com/Nostea/myPortfolio"}
+              setLinkTarget={setLinkTarget}
+              setPreviewImg={setPreviewImg}
+              techStack={["JavaScript", "React.js", "Figma"]}
             />
           </div>
         </div>

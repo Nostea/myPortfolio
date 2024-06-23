@@ -13,9 +13,9 @@ const WorkListItem = ({
         setLinkTarget(linkTarget);
       }}
     >
-      <div className="flex flex-row items-center justify-between gap-8 py-5 pb-5">
-        <p className="max-mobile:text-sm">{project}</p>
-        <div className="flex flex-row flex-wrap gap-2">
+      <div className="flex flex-row items-center justify-between gap-8 py-5 pb-5 hover:bg-violet-50">
+        <p className="max-mobile:text-sm hover:text-violet-400">{project}</p>
+        <div className="hover:text-violet-1 200 flex flex-row flex-wrap gap-2 overflow-x-auto">
           {techStack?.map((tech, index) => (
             <p
               key={index}
