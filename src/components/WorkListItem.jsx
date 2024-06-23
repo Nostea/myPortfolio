@@ -1,15 +1,19 @@
-const WorkListItem = ({ project }) => {
+const WorkListItem = ({ project, previewImgClass, linkTarget, setPreviewImg, setLinkTarget, techStack }) => {
   return (
-    <div>
+    <div onMouseOver={(e) => {
+      setPreviewImg(previewImgClass);
+      setLinkTarget(linkTarget);
+    }
+    }
+    >
       <div className="flex flex-row justify-between gap-8 py-5 pb-5">
-        <p>weather.io</p>
+        <p>{project}</p>
         <div className="flex flex-row flex-wrap gap-2">
-          <p className="rounded-full bg-green-100 px-3 py-1 text-green-500">
-            TypeScript
-          </p>
-          <p className="rounded-full bg-green-100 px-3 py-1 text-green-500">
-            React
-          </p>
+          { techStack?.map((tech, index) => 
+            <p key={index} className="rounded-full bg-green-100 px-3 py-1 text-green-500">
+              {tech}
+            </p>
+          )}
         </div>
       </div>
       <div className="w-full border-b-2 border-black"></div>
