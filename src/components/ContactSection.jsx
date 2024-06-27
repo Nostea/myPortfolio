@@ -1,3 +1,6 @@
+/* 
+backup!
+
 const ContactSection = () => {
   return (
     <footer className="flex flex-row items-center justify-center">
@@ -31,3 +34,5 @@ const ContactSection = () => {
 };
 
 export default ContactSection;
+
+*/
