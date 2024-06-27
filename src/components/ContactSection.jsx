@@ -8,13 +8,13 @@ const ContactSection = () => {
       </div>
       <div className="ml- flex w-1/2 flex-col">
         <a
-          href="/"
+          href="https://github.com/Nostea"
           className="w-fit font-clashDisplay text-4xl font-bold uppercase hover:text-violet-500"
         >
           GitHub
         </a>
         <a
-          href="/"
+          href="https://www.linkedin.com/in/annagof/"
           className="w-fit font-clashDisplay text-4xl font-bold uppercase hover:text-violet-500"
         >
           Linkedin
@@ -23,7 +23,7 @@ const ContactSection = () => {
           href="/"
           className="w-fit font-clashDisplay text-4xl font-bold uppercase hover:text-violet-500"
         >
-          @Email
+          anna@gofman.eu
         </a>
       </div>
     </footer>

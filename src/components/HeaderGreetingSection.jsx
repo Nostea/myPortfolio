@@ -3,14 +3,14 @@ import Navbar from "./Navbar";
 const HeaderGreetingSection = () => {
   return (
     <>
-      <div className="max-mobile:pb-[10vh] flex flex-col items-center bg-headerBg bg-top bg-no-repeat pt-2">
+      <div className="flex flex-col items-center bg-headerBg bg-top bg-no-repeat pt-2 max-mobile:pb-[10vh]">
         <div className="mb-[20vh] w-full">
           <Navbar />
         </div>
 
-        <section className="max-w-screen max-mobile:mb-[15vh] max-ultrawide:mx-[20vw] mx-[20vw] mb-[25vh] items-center">
+        <section className="max-w-screen mx-[20vw] mb-[25vh] items-center max-ultrawide:mx-[20vw] max-mobile:mb-[15vh]">
           <svg
-            className="max-mobile:mb-0 mb-8 mr-4 inline"
+            className="mb-8 mr-4 inline max-mobile:mb-0"
             width="337"
             height="72"
             viewBox="0 0 337 72"
@@ -36,7 +36,7 @@ const HeaderGreetingSection = () => {
             />
           </svg>
 
-          <span className="max-mobile:text-4xl font-clashDisplay text-7xl font-extrabold uppercase leading-none antialiased">
+          <span className="font-clashDisplay text-7xl font-extrabold uppercase leading-none antialiased max-mobile:text-4xl">
             Anna Gofman Frontend Webdeveloper
           </span>
         </section>
