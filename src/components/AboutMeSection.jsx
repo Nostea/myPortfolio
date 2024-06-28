@@ -17,7 +17,7 @@ const AboutMeSection = () => {
             Before my dev journey I used to work as Sr 3D Artist in the games
             industry.
           </p>
-          <p className="w-fit pl-12 pt-4 font-clashDisplay text-xl font-semibold hover:text-violet-500">
+          <p className="w-fit pl-12 pt-8 font-clashDisplay text-xl font-semibold hover:text-violet-500">
             <a
               href="/AnnaGofmanPortfolio_DE.pdf"
               download
