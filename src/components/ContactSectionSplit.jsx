@@ -16,7 +16,7 @@ const ContactSectionSplit = () => {
         </a>
         <a
           href="/"
-          className="w-fit font-clashDisplay text-6xl font-bold uppercase hover:text-violet-500 max-mobile:text-4xl"
+          className="w-fit text-wrap break-words font-clashDisplay text-3xl font-bold uppercase hover:text-violet-500 max-mobile:text-4xl"
         >
           anna@gofman.eu
         </a>

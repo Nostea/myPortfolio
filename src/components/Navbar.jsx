@@ -4,7 +4,7 @@ import DarkmodeIcon from "./icons/DarkmodeIcon";
 const Navbar = () => {
   return (
     <nav className="flex flex-row justify-between gap-2 px-12 py-4">
-      <p>anna@gofman.eu</p>
+      <p className="font-clashDisplay">anna@gofman.eu</p>
       <div className="flex flex-row gap-2">
         {/*
           <NavLink to="/">Home</NavLink>

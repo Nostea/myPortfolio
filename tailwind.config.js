@@ -27,6 +27,7 @@ export default {
         depthPlaceHolder: "url('/depthPlaceholder.jpg')",
         free2gamePreview: "url('/Free2GamePreview.png')",
         weatherIO: "url('/WeatherApp.png')",
+        greenMarket: "url('/GreenMarket-M-phone.png')",
       },
     },
   },

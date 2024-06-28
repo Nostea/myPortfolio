@@ -2,23 +2,30 @@ import { Link } from "react-router-dom";
 
 const AboutMeSection = () => {
   return (
-    <section className="max-mobile:flex-col-reverse max-mobile:px-4 max-mobile:gap-8 flex flex-row items-end justify-center gap-8 px-16 pb-[15vh]">
-      <div className="flew-row max-mobile:gap-2 max-mobile:flex-col-reverse max-mobile:items-center max-mobile:mx-6 flex items-end gap-2">
-        <div className="max-mobile:w-full mb-16 flex w-[40vw] flex-col">
-          <h2 className="max-mobile:text-5xl pb-4 font-clashDisplay text-6xl font-bold uppercase">
+    <section className="flex flex-row items-end justify-center gap-8 px-16 pb-[15vh] max-mobile:flex-col-reverse max-mobile:gap-8 max-mobile:px-4">
+      <div className="flew-row flex items-end gap-2 max-mobile:mx-6 max-mobile:flex-col-reverse max-mobile:items-center max-mobile:gap-2">
+        <div className="mb-16 flex w-[40vw] flex-col max-mobile:w-full">
+          <h2 className="pb-4 font-clashDisplay text-6xl font-bold uppercase max-mobile:text-5xl">
             Nice to meet you
           </h2>
           <p className="pb-4">
-            I am a Fullstack Webdeveloper with a love for fresh 3D and design.
-            In my day to day work I build websites in React & JS. I love making
-            memorable user experiences.
+            I am Berlin based Frontend developer with a love for interactive 3D
+            and design. In my day to day work I build websites in React & JS. I
+            love making memorable user experiences that make your life easier.
           </p>
           <p>
             Before my dev journey I used to work as Sr 3D Artist in the games
             industry.
           </p>
           <p className="w-fit pl-12 pt-4 font-clashDisplay text-xl font-semibold hover:text-violet-500">
-            <Link to={"/"}>my resume ⟶</Link>
+            <a
+              href="/AnnaGofmanPortfolio_DE.pdf"
+              download
+              className="flex flex-row justify-center gap-2"
+            >
+              <img src="/flag-DE.svg" className="w-5" alt="flag DE" />
+              my resume ⟶
+            </a>
           </p>
         </div>
         <svg
@@ -39,7 +46,7 @@ const AboutMeSection = () => {
         <img
           src="/profileImg.jpg"
           alt="portrait of myself"
-          className="max-mobile:w-[250px] max-mobile:h-[300px] h-[455px] w-96 rounded-3xl object-cover object-center"
+          className="h-[455px] w-96 rounded-3xl object-cover object-center max-mobile:h-[300px] max-mobile:w-[250px]"
         />
       </div>
     </section>
