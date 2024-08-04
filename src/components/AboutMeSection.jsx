@@ -9,9 +9,9 @@ const AboutMeSection = () => {
             Nice to meet you
           </h2>
           <p className="pb-4">
-            I am Berlin based Frontend developer with a love for interactive 3D
-            and design. In my day to day work I build websites in React & JS. I
-            love making memorable user experiences that make your life easier.
+            I am a Berlin based Frontend developer with a love for interactive
+            3D and design. In my day to day work I build websites in React & JS.
+            I love making memorable user experiences that make your life easier.
           </p>
           <p>
             Before my dev journey I used to work as Sr 3D Artist in the games

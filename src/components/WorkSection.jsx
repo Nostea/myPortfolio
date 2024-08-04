@@ -49,7 +49,7 @@ const WorkSection = () => {
             <WorkListItem
               project={"Free2Game"}
               previewImgClass={"bg-free2gamePreview"}
-              linkTarget={"https://github.com/Nostea/Free2GameV3"}
+              linkTarget={"https://github.com/Nostea/free2GameV2"}
               setLinkTarget={setLinkTarget}
               setPreviewImg={setPreviewImg}
               techStack={["Rest API", "JavaScript", "React.js"]}
