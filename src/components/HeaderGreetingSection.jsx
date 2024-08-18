@@ -14,7 +14,7 @@ const HeaderGreetingSection = () => {
         </div>
 
         <section className="flex-rows mx-[10vw] mb-12 flex items-center justify-items-center gap-8 max-mobile:mb-[5vh] max-mobile:flex-col-reverse">
-          <div>
+          <div className="">
             <p className="mb-8 font-clashDisplay text-7xl font-semibold leading-none tracking-wide antialiased max-mobile:text-center max-mobile:text-4xl">
               Hey there! <br /> I'm Anna Gofman
             </p>
@@ -26,7 +26,7 @@ const HeaderGreetingSection = () => {
               <a
                 href="/AnnaGofmanPortfolio_DE.pdf"
                 download
-                className="flex w-fit flex-row items-center pb-2 font-clashDisplay text-xl font-medium antialiased transition-all duration-75 ease-in-out hover:border-b-2 hover:border-green-400 max-mobile:text-lg"
+                className="flex h-14 w-fit flex-row items-center pb-2 font-clashDisplay text-xl font-medium antialiased transition-all duration-75 ease-in-out hover:border-b-2 hover:border-green-400 max-mobile:text-lg"
               >
                 Resume
                 <img
@@ -36,7 +36,7 @@ const HeaderGreetingSection = () => {
                 />
               </a>
               <a
-                className="w-fit pb-2 font-clashDisplay text-xl font-medium antialiased transition-all duration-75 ease-in-out hover:border-b-2 hover:border-green-400 max-mobile:text-lg"
+                className="flex h-14 w-fit flex-row items-center justify-center pb-2 font-clashDisplay text-xl font-medium antialiased transition-all duration-75 ease-in-out hover:border-b-2 hover:border-green-400 max-mobile:text-lg"
                 href="mailto:anna@gofman.eu"
               >
                 Contact me

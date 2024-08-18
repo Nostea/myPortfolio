@@ -16,12 +16,12 @@ const Projectdetail = () => {
     <>
       <Navbar />
 
-      <section className="flex h-fit flex-col bg-gray-100 px-[5vw] py-8 max-mobile:h-fit">
+      <section className="flex flex-col border-t-2 border-slate-200 bg-slate-100 px-[5vw] pb-32 pt-8 max-mobile:h-fit">
         <div className="mb-8 grid grid-cols-2 items-center gap-8 overflow-hidden rounded-lg bg-white max-mobile:grid-cols-1 max-mobile:gap-2">
           <img
             src={project.titleImg}
             alt={project.alt}
-            className="w-full max-mobile:h-96 max-mobile:object-cover max-mobile:object-center"
+            className="h-full object-cover object-left max-mobile:object-cover max-mobile:object-center"
           />
           <div className="flex flex-col p-6">
             <h2 className="mb-4 font-clashDisplay text-4xl font-semibold antialiased">

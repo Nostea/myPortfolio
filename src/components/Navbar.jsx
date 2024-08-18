@@ -4,10 +4,10 @@ import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 const Navbar = () => {
   return (
-    <nav className="flex flex-row items-center justify-between gap-2 border-slate-400 px-12 py-6">
+    <nav className="flex flex-row items-center justify-between gap-2 px-12 py-6 max-mobile:px-4 max-mobile:py-4">
       <Link
         to="/"
-        className="font-clashDisplay text-4xl font-semibold antialiased"
+        className="font-clashDisplay text-4xl font-semibold antialiased max-mobile:text-3xl"
       >
         AG
       </Link>
@@ -16,7 +16,7 @@ const Navbar = () => {
           <NavLink
             to="/"
             className={({ isActive }) =>
-              `font-clashDisplay text-xl antialiased ${isActive ? "border-b-2 border-green-400" : undefined}`
+              `font-clashDisplay text-xl antialiased hover:text-violet-400 max-mobile:text-lg ${isActive ? "border-b-2 border-green-400" : undefined}`
             }
           >
             Home
@@ -24,12 +24,12 @@ const Navbar = () => {
           <NavLink
             to="/projects"
             className={({ isActive }) =>
-              `font-clashDisplay text-xl antialiased ${isActive ? "border-b-2 border-green-400" : undefined}`
+              `font-clashDisplay text-xl antialiased hover:text-violet-400 max-mobile:text-lg ${isActive ? "border-b-2 border-green-400" : undefined}`
             }
           >
             Projects
           </NavLink>
-          <div className="ml-8 flex flex-row gap-2">
+          <div className="ml-8 flex flex-row gap-2 max-mobile:gap-4">
             <a
               href="https://www.linkedin.com/in/annagof/"
               className="hover:text-violet-500"
