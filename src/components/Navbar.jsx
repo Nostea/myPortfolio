@@ -16,7 +16,7 @@ const Navbar = () => {
           <NavLink
             to="/"
             className={({ isActive }) =>
-              `font-clashDisplay text-xl antialiased ${isActive ? "bg-yellow-100" : undefined}`
+              `font-clashDisplay text-xl antialiased ${isActive ? "border-b-2 border-green-400" : undefined}`
             }
           >
             Home
@@ -24,7 +24,7 @@ const Navbar = () => {
           <NavLink
             to="/projects"
             className={({ isActive }) =>
-              `font-clashDisplay text-xl antialiased ${isActive ? "bg-yellow-100" : undefined}`
+              `font-clashDisplay text-xl antialiased ${isActive ? "border-b-2 border-green-400" : undefined}`
             }
           >
             Projects

@@ -4,7 +4,8 @@ export default {
   theme: {
     screens: {
       mobile: "690px",
-      //tablet: "640px",
+      tablet: "960px",
+      desktopM: "1400px",
       desktop: "1920px",
       ultrawide: "2400px",
       // => @media (min-width: 1280px) { ... }

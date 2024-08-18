@@ -30,7 +30,7 @@ const Projectdetail = () => {
 
             <div className="mb-4 flex flex-row flex-wrap gap-2">
               {project.skills.map((skill, skillIndex) => (
-                <Pill text={skill} />
+                <Pill key={skillIndex} text={skill} />
               ))}
             </div>
             <p className="mb-8 antialiased">{project.description}</p>
@@ -62,7 +62,7 @@ const Projectdetail = () => {
 
         <div className="mx-16 grid grid-flow-col-dense gap-8">
           {project.galleryImgs.map((galleryImg, galleryImgIndex) => (
-            <img src={galleryImg} alt="" />
+            <img key={galleryImgIndex} src={galleryImg} alt="" />
           ))}
         </div>
       </section>

@@ -1,6 +1,8 @@
 import { useState } from "react";
 import WorkListItem from "./WorkListItem.jsx";
 import { projects } from "../data/projects.js";
+import { Link } from "react-router-dom";
+import Pill from "./Pill.jsx";
 
 const WorkSection = () => {
   const [previewImg, setPreviewImg] = useState("bg-depthPlaceHolder");
@@ -28,9 +30,14 @@ const WorkSection = () => {
             <h2 className="font-clashDisplay text-4xl font-extrabold uppercase antialiased max-mobile:text-3xl">
               Projects
             </h2>
-            <p className="font-clashDisplay text-2xl antialiased max-mobile:px-4 max-mobile:text-xl">
-              {filteredProjects.length}
-            </p>
+            <span className="font-clashDisplay text-2xl antialiased max-mobile:px-4 max-mobile:text-xl">
+              <Link
+                to={`/projects`}
+                className="flex flex-row gap-2 hover:font-medium"
+              >
+                See all &gt; <Pill text={projects.length} />
+              </Link>
+            </span>
           </div>
 
           <div className="w-full border-b-2 border-black py-2 pb-2"></div>
@@ -40,7 +47,7 @@ const WorkSection = () => {
               <WorkListItem
                 key={index}
                 project={project.title}
-                previewImgClass={`bg-${project.tooltipImgClass}`}
+                previewImgClass={project.tooltipImgClass}
                 linkTarget={`/projects/${project.title}`}
                 setLinkTarget={setLinkTarget}
                 setPreviewImg={setPreviewImg}
