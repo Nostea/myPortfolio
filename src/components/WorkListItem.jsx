@@ -13,10 +13,10 @@ const WorkListItem = ({
         setLinkTarget(linkTarget);
       }}
     >
-      <div className="flex flex-row items-center justify-between gap-8 py-5 pb-5 hover:bg-violet-50">
+      <div className="flex flex-row items-center justify-between gap-12 py-5 pb-5 transition-all duration-100 ease-in-out hover:bg-violet-50 hover:py-10">
         <a
           href={linkTarget}
-          className="hover:text-violet-400 max-mobile:text-sm"
+          className="antialiased hover:text-violet-400 max-mobile:text-sm"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -26,7 +26,7 @@ const WorkListItem = ({
           {techStack?.map((tech, index) => (
             <p
               key={index}
-              className="rounded-full bg-green-100 px-3 py-1 text-green-500 max-mobile:text-sm max-mobile:font-light"
+              className="rounded-full bg-green-100 px-3 py-1 text-green-500 antialiased max-mobile:text-sm max-mobile:font-light"
             >
               {tech}
             </p>
