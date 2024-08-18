@@ -28,6 +28,8 @@ export default {
         free2gamePreview: "url('/Free2GamePreview.png')",
         weatherIO: "url('/WeatherApp.png')",
         greenMarket: "url('/GreenMarket-M-phone.png')",
+        tastyApp: "url('/blobGridBG.svg')",
+        headphonesCompany: "url('/blobGridBG.svg')",
       },
     },
   },

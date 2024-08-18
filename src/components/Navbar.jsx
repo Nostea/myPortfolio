@@ -13,12 +13,19 @@ const Navbar = () => {
       </Link>
       <div>
         <div className="flex flex-row gap-4">
-          <NavLink to="/" className="font-clashDisplay text-xl antialiased">
+          <NavLink
+            to="/"
+            className={({ isActive }) =>
+              `font-clashDisplay text-xl antialiased ${isActive ? "bg-yellow-100" : undefined}`
+            }
+          >
             Home
           </NavLink>
           <NavLink
             to="/projects"
-            className="font-clashDisplay text-xl antialiased"
+            className={({ isActive }) =>
+              `font-clashDisplay text-xl antialiased ${isActive ? "bg-yellow-100" : undefined}`
+            }
           >
             Projects
           </NavLink>

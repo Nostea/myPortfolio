@@ -1,9 +1,15 @@
 import { useState } from "react";
 import WorkListItem from "./WorkListItem.jsx";
+import { projects } from "../data/projects.js";
 
 const WorkSection = () => {
   const [previewImg, setPreviewImg] = useState("bg-depthPlaceHolder");
   const [linkTarget, setLinkTarget] = useState("/home");
+
+  const projectCount = 5;
+  const filteredProjects = projects
+    .filter((project) => project.isFavorite === true)
+    .slice(0, projectCount);
 
   return (
     <section
@@ -23,46 +29,24 @@ const WorkSection = () => {
               Projects
             </h2>
             <p className="font-clashDisplay text-2xl antialiased max-mobile:px-4 max-mobile:text-xl">
-              4
+              {filteredProjects.length}
             </p>
           </div>
 
           <div className="w-full border-b-2 border-black py-2 pb-2"></div>
 
           <div className="pb-[14vw] hover:cursor-pointer">
-            <WorkListItem
-              project={"GreenMarket"}
-              previewImgClass={"bg-greenMarket"}
-              linkTarget={"https://github.com/MorphDE/GreenMarket"}
-              setLinkTarget={setLinkTarget}
-              setPreviewImg={setPreviewImg}
-              techStack={["JavaScript", "React.js", "Node.js"]}
-            />
-            <WorkListItem
-              project={"My portfolio website"}
-              previewImgClass={"bg-depthPlaceHolder"}
-              linkTarget={"https://github.com/Nostea/myPortfolio"}
-              setLinkTarget={setLinkTarget}
-              setPreviewImg={setPreviewImg}
-              techStack={["JavaScript", "React.js", "Figma"]}
-            />
-            <WorkListItem
-              project={"Free2Game"}
-              previewImgClass={"bg-free2gamePreview"}
-              linkTarget={"https://github.com/Nostea/free2GameV2"}
-              setLinkTarget={setLinkTarget}
-              setPreviewImg={setPreviewImg}
-              techStack={["Rest API", "JavaScript", "React.js"]}
-            />
-
-            <WorkListItem
-              project={"weather.io"}
-              previewImgClass={"bg-weatherIO"}
-              linkTarget={"https://github.com/Nostea/weatherApp"}
-              setLinkTarget={setLinkTarget}
-              setPreviewImg={setPreviewImg}
-              techStack={["Rest Api", "JavaScript", "React.js"]}
-            />
+            {filteredProjects.map((project, index) => (
+              <WorkListItem
+                key={index}
+                project={project.title}
+                previewImgClass={`bg-${project.tooltipImgClass}`}
+                linkTarget={`/projects/${project.title}`}
+                setLinkTarget={setLinkTarget}
+                setPreviewImg={setPreviewImg}
+                techStack={project.skills}
+              />
+            ))}
           </div>
         </div>
       </div>

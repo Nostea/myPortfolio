@@ -1,6 +1,7 @@
 import CardProjectM from "../components/CardProjectM";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
+import { projects } from "../data/projects";
 
 const Projects = () => {
   return (
@@ -12,13 +13,9 @@ const Projects = () => {
         </h2>
 
         <div className="grid grid-cols-3 gap-4 max-mobile:grid-cols-2">
-          <CardProjectM />
-          <CardProjectM />
-          <CardProjectM />
-          <CardProjectM />
-          <CardProjectM />
-          <CardProjectM />
-          <CardProjectM />
+          {projects.map((project, index) => (
+            <CardProjectM key={index} project={project} />
+          ))}
         </div>
       </section>
       <Footer />
