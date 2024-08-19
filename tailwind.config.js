@@ -4,7 +4,8 @@ export default {
   theme: {
     screens: {
       mobile: "690px",
-      //tablet: "640px",
+      tablet: "960px",
+      desktopM: "1400px",
       desktop: "1920px",
       ultrawide: "2400px",
       // => @media (min-width: 1280px) { ... }
@@ -26,8 +27,14 @@ export default {
         gridBG: "url('/gridBG.svg')",
         depthPlaceHolder: "url('/depthPlaceholder.jpg')",
         free2gamePreview: "url('/Free2GamePreview.png')",
-        weatherIO: "url('/WeatherApp.png')",
-        greenMarket: "url('/GreenMarket-M-phone.png')",
+        weatherIO: "url('/projectPreview/WeatherApptitleImg.jpg')",
+        greenMarket: "url('/projectPreview/greenmarket/greenmarket_0.jpg')",
+        tastyApp: "url('/projectPreview/TastyTitle.jpg')",
+        headphonesCompany: "url('/projectPreview/headphones/headphones_1.png')",
+        wanderlust: "url('/projectPreview/wanderlust_0.png')",
+        digitaldesigner:
+          "url('/projectPreview/digitaldesigner/digitaldesigner_1.png')",
+        pokedex: "url('/projectPreview/pokemon/pokemon_0.jpg')",
       },
     },
   },
