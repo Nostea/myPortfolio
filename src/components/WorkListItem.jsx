@@ -1,3 +1,8 @@
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faCircleInfo, faGlobe } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Link } from "react-router-dom";
+
 const WorkListItem = ({
   project,
   previewImgClass,
@@ -5,6 +10,9 @@ const WorkListItem = ({
   setPreviewImg,
   setLinkTarget,
   techStack,
+  liveSite,
+  detailpageLink,
+  githubLink,
 }) => {
   return (
     <div
@@ -17,20 +25,22 @@ const WorkListItem = ({
         <a
           href={linkTarget}
           className="antialiased hover:text-violet-400 max-mobile:text-sm"
-          target="_blank"
-          rel="noopener noreferrer"
         >
           {project}
         </a>
-        <div className="hover:text-violet-1 200 items max-tablet:gap-1 flex flex-row flex-wrap justify-end gap-2 overflow-x-auto">
-          {techStack?.map((tech, index) => (
-            <p
-              key={index}
-              className="max-tablet:text-xs rounded-full bg-green-100 px-3 py-1 text-green-500 antialiased max-mobile:text-xs max-mobile:font-light"
-            >
-              {tech}
-            </p>
-          ))}
+        <div className="hover:text-violet-1 200 items flex flex-row flex-wrap justify-end gap-2 overflow-x-auto max-mobile:gap-4">
+          <a
+            href={liveSite}
+            className="flex flex-row items-center gap-1 rounded bg-green-100 px-2 py-1 font-clashDisplay text-sm antialiased transition-all duration-200 ease-in-out hover:bg-violet-400"
+          >
+            <FontAwesomeIcon icon={faGlobe} /> visit
+          </a>
+          <a
+            href={githubLink}
+            className="flex flex-row items-center gap-1 rounded border-[1px] border-black px-2 py-1 font-clashDisplay text-sm antialiased transition-all duration-200 ease-in-out hover:border-violet-500 hover:text-violet-500"
+          >
+            <FontAwesomeIcon icon={faGithub} /> GitHub
+          </a>
         </div>
       </div>
       <div className="w-full border-b-2 border-black"></div>

@@ -3,7 +3,7 @@ export const projects = [
     id: 1,
     isFavorite: true,
     title: "Free2Game",
-    skills: ["ReactJS", "Rest API", "HTML/CSS"],
+    skills: ["React", "Rest API", "HTML/CSS"],
     features: ["React Router DOM"],
     description:
       "A hub for gamers to look up top free 2 play games. Features multiple filter and search options. Uses the free free2game API",
@@ -93,7 +93,7 @@ export const projects = [
     id: 4,
     isFavorite: true,
     title: "Weather App",
-    skills: ["HTML", "CSS", "API"],
+    skills: ["HTML", "CSS", "Rest API"],
     features: ["responsive"],
     description: "Simple weather forecast app. See up to 5 days in advance.",
     titleImg: "/projectPreview/WeatherApptitleImg.jpg",
@@ -107,7 +107,7 @@ export const projects = [
     id: 5,
     isFavorite: true,
     title: "Pokedex",
-    skills: ["HTML", "CSS", "API"],
+    skills: ["HTML", "CSS", "Rest API"],
     features: ["mobile"],
     description:
       "Look up information on all official pokemon in this mobile app.",
