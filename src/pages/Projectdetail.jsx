@@ -21,7 +21,7 @@ const Projectdetail = () => {
           <img
             src={project.titleImg}
             alt={project.alt}
-            className="h-full object-cover object-left max-mobile:object-cover max-mobile:object-center"
+            className="min-h-[60vh] object-cover object-left max-tablet:object-left"
           />
           <div className="flex flex-col p-6">
             <h2 className="mb-4 font-clashDisplay text-4xl font-semibold antialiased">
@@ -60,9 +60,14 @@ const Projectdetail = () => {
           </div>
         </div>
 
-        <div className="mx-16 grid grid-flow-col-dense gap-8">
+        <div className="mx-16 grid grid-cols-2 gap-8 max-desktopM:mx-6 max-tablet:grid-cols-1">
           {project.galleryImgs.map((galleryImg, galleryImgIndex) => (
-            <img key={galleryImgIndex} src={galleryImg} alt="" />
+            <img
+              key={galleryImgIndex}
+              src={galleryImg}
+              className="rounded-lg"
+              alt=""
+            />
           ))}
         </div>
       </section>
