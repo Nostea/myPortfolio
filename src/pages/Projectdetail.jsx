@@ -1,7 +1,10 @@
 import Navbar from "../components/Navbar";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
+import {
+  faArrowUpRightFromSquare,
+  faGlobe,
+} from "@fortawesome/free-solid-svg-icons";
 import Footer from "../components/Footer";
 import { useParams } from "react-router-dom";
 import { projects } from "../data/projects";
@@ -11,13 +14,12 @@ const Projectdetail = () => {
   const params = useParams();
   const projectTitle = params.projectTitle;
   const project = projects.find((p) => p.title === projectTitle);
-  console.log(project);
   return (
     <>
       <Navbar />
 
       <section className="flex flex-col border-t-2 border-slate-200 bg-slate-100 px-[5vw] pb-32 pt-8 max-mobile:h-fit">
-        <div className="mb-8 grid grid-cols-2 items-center gap-8 overflow-hidden rounded-lg bg-white max-mobile:grid-cols-1 max-mobile:gap-2">
+        <div className="mb-16 grid grid-cols-2 items-center gap-8 overflow-hidden rounded-lg bg-white max-mobile:grid-cols-1 max-mobile:gap-2">
           <img
             src={project.titleImg}
             alt={project.alt}
@@ -35,31 +37,29 @@ const Projectdetail = () => {
             </div>
             <p className="mb-8 antialiased">{project.description}</p>
 
-            <div className="ml-12 flex flex-col gap-1 max-mobile:flex-row max-mobile:gap-8">
+            <div className="flex flex-row gap-2 max-mobile:gap-4">
               <a
                 href={project.site}
                 target="_blank"
-                className="font-clashDisplay hover:text-violet-400"
+                className="flex flex-row items-center gap-2 rounded bg-green-100 px-2 py-1 font-clashDisplay text-sm antialiased"
               >
-                <FontAwesomeIcon
-                  icon={faArrowUpRightFromSquare}
-                  size="lg"
-                  className="pr-2"
-                />{" "}
-                live demo
+                <FontAwesomeIcon icon={faGlobe} /> visit
               </a>
               <a
                 href={project.repo}
                 target="_blank"
-                className="font-clashDisplay hover:text-violet-400"
+                className="flex flex-row items-center rounded border-[1px] border-black px-2 py-1 font-clashDisplay text-sm antialiased"
               >
                 <FontAwesomeIcon icon={faGithub} size="lg" className="pr-2" />{" "}
-                GitHub Repo
+                GitHub
               </a>
             </div>
           </div>
         </div>
 
+        <h2 className="mb-6 border-b-2 border-dotted border-slate-200 pb-2 text-center font-clashDisplay text-3xl font-semibold uppercase antialiased max-mobile:text-xl">
+          Gallery
+        </h2>
         <div className="mx-16 grid grid-cols-2 gap-8 max-desktopM:mx-6 max-tablet:grid-cols-1">
           {project.galleryImgs.map((galleryImg, galleryImgIndex) => (
             <img
