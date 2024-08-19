@@ -24,7 +24,7 @@ const HeaderGreetingSection = () => {
 
             <div className="flex flex-row gap-12 max-mobile:flex-row max-mobile:items-center max-mobile:justify-center max-mobile:gap-8">
               <a
-                href="/AnnaGofmanPortfolio_DE.pdf"
+                href="/AnnaGofman_CV_DE.pdf"
                 download
                 className="flex h-14 w-fit flex-row items-center pb-2 font-clashDisplay text-xl font-medium antialiased transition-all duration-75 ease-in-out hover:border-b-2 hover:border-green-400 max-mobile:text-lg"
               >
