@@ -22,7 +22,7 @@ const WorkSection = () => {
         <div
           className={`${previewImg} w-full rounded-3xl bg-cover max-mobile:h-[50vh] max-mobile:w-full max-mobile:bg-cover`}
         >
-          <a href={linkTarget} />
+          <Link to={linkTarget} />
         </div>
 
         <div className="mr-[5vw] w-4/6 max-tablet:mr-[2vw] max-mobile:mr-0 max-mobile:w-full max-mobile:px-8">
